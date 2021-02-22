@@ -1,45 +1,40 @@
 ---
 layout: default
 ---
-<main class="page">
-	<nav class="navbar navbar-expand-lg navbar-dark">
-	  <a class="navbar-brand" href="{{ site.url }}"><img src="{{ site.url }}/img/digital_light.svg" alt="{{ page.text-title-nav }}" style="height: 80px;"></a>
+<div class='container mt-5'>
+	<nav class="navbar navbar-expand-lg navbar-dark" style='padding-bottom: 40px;'>
+	  <a class="navbar-brand" href="{{ site.url }}">
+	  <img src="{{ site.url }}/img/digital_light.svg" alt="{{ page.text-title-nav }}" style="height: 60px;"></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 		<div class="collapse navbar-expand navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto navBox" style="position: absolute; right: 40px">
-			{% for link in site.data.navigation %}
-				{% assign class = "" %}
-				{% if link.lang == page.lang %}
-					{% if link.link == page.url %}
-						{% assign class = class | append: " active" %}
-					{% endif %}
-					<li class="nav-item">
-						<a href="{{ link.link }}" class="{{ class }} nav-link">{{ link.name }}</a>
-					</li>
-				{% endif%}
-			{% endfor %}
-	      <li style="width: 40px;"></li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="{{ site.url }}/">ru</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="{{ site.url }}/en">en</a>
-	      </li>
+	    <ul class="navbar-nav mr-auto navBox" style="position: absolute; right: 0px">
+			<li class="nav-item mr-4">
+				<a href="http://ikovylyaev.com" class="nav-link">дизайн</a>
+			</li>
+	      	<li class="nav-item mr-4">
+				<a href="http://video.ikovylyaev.com" class=" nav-link">фото и видео</a>
+			</li>
+			<li class="nav-item">
+				<a href="http://nature.ikovylyaev.com" class="nav-link">урал</a>
+			</li>
+		       <li class="nav-item">
+				<a href="http://blog.ikovylyaev.com" class="active nav-link">блог</a>
+			</li>
 	    </ul>
 	  </div>
 	</nav>
-</main>
-<div class="main-body container-fluid" style="padding: 0 40px">
-{{content}}
-</div>
-<footer class="row">
-	<div class="col-6 p-0 m-0">
-		&copyvideo.ikovylyaev.com 2020<br>
+	<img src='{{site.url}}/img/title.svg' style='width: 100%; margin: 25px 0;'>
+	<section class='row'>
+	  {{ content }}
+    </section>
+<footer class="row" style="margin-top: 200px;">
+	<div class="col-6 m-0">
+		&copyikovylyaev.com 2021<br>
 		<a href='{{site.url}}/terms'>terms of use</a> | <a href='{{site.url}}/policy'>privacy policy</a>
 	</div>
-	<div class="col-6 p-0 m-0" style='text-align: right'>
+	<div class="col-6 m-0" style='text-align: right'>
 		<ul class="nav social-links">
 		  <li class="nav-item">
 		    <a class="nav-link" href="http://vk.com/ikovylyaev"><i class="fab fa-vk"></i></a>
@@ -63,3 +58,5 @@ layout: default
 	</div>
 
 </footer>
+
+</main>
