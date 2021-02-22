@@ -28,8 +28,7 @@ layout: default
 	<img src='{{site.url}}/img/title.svg' style='width: 100%; margin: 25px 0;'>
 	<section class='row'>
 	  {% for post in site.categories.video %}
-		<a href='https://www.youtube.com/watch?v={{ post.video }}' target="_blank" class='col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-4'>
-			<img src="{{ site.url }}/img/title/{{ post.number }}.png" style='width:100%; border-radius: 10px;' alt="{{ post.title }} - ikovylyaev">
+		<a href='{{site.url}}{{ post.permalink }}' class='col-12 mb-4'>
 			<div style="text-transform: lowercase;">
 				<h4>{{ post.title }}</h4>
 			</div>
