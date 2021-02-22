@@ -14,14 +14,18 @@ layout: default
 				<a href="http://ikovylyaev.com" class="nav-link">дизайн</a>
 			</li>
 	      	<li class="nav-item mr-4">
-				<a href="http://video.ikovylyaev.com" class="active nav-link">фото и видео</a>
+				<a href="http://video.ikovylyaev.com" class=" nav-link">фото и видео</a>
 			</li>
 			<li class="nav-item">
 				<a href="http://nature.ikovylyaev.com" class="nav-link">урал</a>
 			</li>
+		       <li class="nav-item">
+				<a href="http://blog.ikovylyaev.com" class="active nav-link">блог</a>
+			</li>
 	    </ul>
 	  </div>
 	</nav>
+	<img src='{{site.url}}/img/title.svg' style='width: 100%; margin: 25px 0;'>
 	<section class='row'>
 	  {{ content }}
     </section>
