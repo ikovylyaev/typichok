@@ -1,0 +1,99 @@
+
+@media (max-width: 550px) {
+    body{
+        padding: 25px;
+        background: #000;
+        color: #fff;
+    }
+    .top-line .is-col .hello{
+        margin-right: 100px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media (min-width: 551px) {
+    body{
+        padding: 50px;
+        background: #000;
+        color: #fff;
+    }
+}
+
+@media (max-width: 767px){
+    .post-cont{
+        margin-left: 0px; 
+    }
+}
+@media (min-width: 768px){
+    .post-cont{
+        margin-left: -24px; 
+    }
+}
+
+.links-nav{
+    font-size: 30px;
+}
+.links-nav b{
+    padding-right: 50px;
+}
+.links-nav a{
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.3s;
+    padding-right: 50px;
+}
+.links-nav a:hover{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.post{
+    font-size: 30px;
+    
+}
+.post .is-col{
+    margin-left: 0px!important;
+}
+.post p{
+    padding: 0px;
+    margin: 0px;
+}
+.post a{
+    color: #fff;
+    text-decoration: none;
+}
+.post a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.bg-post{
+    z-index: -2;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+.bg-all{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: rgba(0,0,0,0.4);
+    content: "";
+}
+.contact{
+    font-size: 30px;
+}
+.contact a{
+    color: #fff;
+    text-decoration: none;
+}
+.contact a:hover{
+    color: #fff;
+    text-decoration: none;
+}
