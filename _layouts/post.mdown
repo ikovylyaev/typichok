@@ -25,7 +25,7 @@ layout: default
 	    </ul>
 	  </div>
 	</nav>
-	<section class='row'>
+	<section>
 	  {{ content }}
     </section>
 <footer class="row" style="margin-top: 200px;">
