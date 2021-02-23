@@ -16,7 +16,7 @@ layout: default
 	      	<li class="nav-item mr-4">
 				<a href="http://video.ikovylyaev.com" class=" nav-link">фото и видео</a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item mr-4">
 				<a href="http://nature.ikovylyaev.com" class="nav-link">урал</a>
 			</li>
 		       <li class="nav-item">
