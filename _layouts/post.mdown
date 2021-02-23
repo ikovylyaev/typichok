@@ -33,7 +33,7 @@ layout: default
 		object-fit: contain;
 		width: 100%;
 		height: 70vh;
-		background: rgba(255,255,255,0.5);
+		background: rgba(255,255,255,0.25);
 		padding: 25px 0;
 		margin: 25px 0;
 		}
