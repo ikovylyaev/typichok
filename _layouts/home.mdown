@@ -26,7 +26,7 @@ layout: default
                     </div>
                   </nav>
                 <img src='{{site.url}}/img/title.svg' class='mt-5' style='width:100%' >
-                <h3 class='mt-5'>блог дизайнера о дизайне и не только</h3>
+                <h3 class='mt-5 mb-5'>блог дизайнера о дизайне и не только</h3>
                 <img src='logo.svg' class='d-none d-sm-none d-md-inline' style="position: absolute; bottom: 80px; height: 4vh;">
                 <div style='position: absolute; bottom: 55px; ' class='d-none d-sm-none d-md-inline'>
                     <a style="color: #fff; text-decoration: none;" href="http://blog.ikovylyaev.com/terms">terms of use</a> | <a style="color: #fff; text-decoration: none;" href="http://blog.ikovylyaev.com/policy">privacy policy</a>
