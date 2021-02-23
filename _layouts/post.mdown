@@ -30,7 +30,7 @@ layout: default
     </section>
 	<style>
 		.post img{
-		object-fit: contain
+		object-fit: contain;
 		width: 100%;
 		height: 70vh;
 		background: rgba(255,255,255,0.5);
