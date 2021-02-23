@@ -4,7 +4,7 @@ layout: default
 <div class='container mt-5'>
 	<nav class="navbar navbar-expand-lg navbar-dark" style='padding-bottom: 40px;'>
 	  <a class="navbar-brand" href="{{ site.url }}">
-	  <img src="{{ site.url }}/img/digital_light.svg" alt="{{ page.text-title-nav }}" style="height: 60px;"></a>
+	  <img src="{{site.url}}/img/title.svg" alt="{{ site.title }}-title" style="height: 60px;"></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -25,7 +25,6 @@ layout: default
 	    </ul>
 	  </div>
 	</nav>
-	<img src='{{site.url}}/img/title.svg' style='width: 100%; margin: 25px 0;'>
 	<section class='row'>
 	  {{ content }}
     </section>
