@@ -1,41 +1,59 @@
 ---
 layout: default
 ---
-<div class='container mt-5'>
-	<nav class="navbar navbar-expand-lg navbar-dark" style='padding-bottom: 40px;'>
-	  <a class="navbar-brand" href="{{ site.url }}">
-	  <img src="{{site.url}}/img/title.svg" alt="{{ site.title }}-title" style="height: 60px;"></a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-		<div class="collapse navbar-expand navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto navBox" style="position: absolute; right: 0px">
-			<li class="nav-item mr-4">
-				<a href="http://ikovylyaev.com" class="nav-link">дизайн</a>
-			</li>
-	      	<li class="nav-item mr-4">
-				<a href="http://video.ikovylyaev.com" class=" nav-link">фото и видео</a>
-			</li>
-			<li class="nav-item mr-4">
-				<a href="http://nature.ikovylyaev.com" class="nav-link">урал</a>
-			</li>
-		       <li class="nav-item">
-				<a href="http://blog.ikovylyaev.com" class="active nav-link">блог</a>
-			</li>
-	    </ul>
-	  </div>
-	</nav>
-	<section class='row'>
-		<div class='col-12 mt-4 mb-4'><h2>Все посты</h2></div>
-	  {% for post in site.posts %}
-		<a href='{{site.url}}{{ post.permalink }}' class='col-12 mb-4'>
-			<div style="text-transform: lowercase;">
-				<h4>{{ post.title }}</h4>
-				<p>{{ post.date | date_to_long_string }}</p>
-			</div>
-		</a>
-	  {% endfor %}
-</section>
+<div class='container-fluid'>
+        <div class='row' style='position: absolute height: calc(100vh - 100px); margin-bottom: 100px;'>
+            <div class='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6'>
+                <nav class="navbar navbar-expand-lg navbar-dark col-12" style='padding-bottom: 40px; padding-top: 0px;'>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                      <div class="collapse navbar-expand navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto navBox">
+                          <li class="nav-item mr-4">
+                              <a href="http://ikovylyaev.com" class="nav-link" style='padding-left: 0px!important;'>дизайн</a>
+                          </li>
+                            <li class="nav-item mr-4">
+                              <a href="http://video.ikovylyaev.com" class=" nav-link">фото и видео</a>
+                          </li>
+                          <li class="nav-item mr-4">
+                              <a href="http://nature.ikovylyaev.com" class="nav-link">урал</a>
+                          </li>
+                             <li class="nav-item">
+                              <a href="http://blog.ikovylyaev.com" class="active nav-link">блог</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </nav>
+                <img src='{{site.url}}/img/title.svg' class='mt-5' style='width:100%' >
+                <h3 class='mt-5'>блог дизайнера о дизайне и не только</h3>
+                <img src='{{site.url}}/img/logo.svg' class='d-none d-sm-none d-md-inline' style="position: absolute; bottom: 55px; height: 4vh;">
+            </div>
+            <div class='col-12 col-sm-12 col-md-4 offset-md-2 col-lg-4 offset-lg-2 col-xl-4 offset-xl-2' style="padding-top: 0.5rem;">
+                {% for post in site.posts limit: 4 %}
+		<div class='card mb-5'>
+                    <a href="{{site.url}}{{ post.permalink }}" class='card-body' style="color: #000; text-decoration: none;">
+                        <h3>{{ post.title}}</h3>
+                        <p style="margin-bottom: 0px;">{{ post.date | date_to_long_string }}</p>
+                    </a>
+                </div>
+		<% endfor %}
+            </div>
+        </div>
+        <div class="row">
+		{% for post in site.posts offset: 4 %}
+            <div class='col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4'>
+                <div class='card mb-3'>
+                    <a href="{{site.url}}{{ post.permalink }}" class='card-body' style="color: #000; text-decoration: none;">
+                        <h3>{{ post.title}}</h3>
+                        <p style="margin-bottom: 0px;">{{ post.date | date_to_long_string }}</p>
+                    </a>
+                </div>
+            </div>
+	{% endfor %}
+        </div>
+    </div>
+
 <footer class="row" style="margin-top: 200px;">
 	<div class="col-6 m-0">
 		&copyikovylyaev.com 2021<br>
