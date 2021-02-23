@@ -26,10 +26,12 @@ layout: default
 	  </div>
 	</nav>
 	<section class='row'>
+		<div class='col-12'><h2>Все посты</h2></div>
 	  {% for post in site.posts %}
 		<a href='{{site.url}}{{ post.permalink }}' class='col-12 mb-4'>
 			<div style="text-transform: lowercase;">
 				<h4>{{ post.title }}</h4>
+				<p>{{ page.date | date_to_long_string }}</p>
 			</div>
 		</a>
 	  {% endfor %}
