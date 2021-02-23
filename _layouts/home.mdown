@@ -27,7 +27,10 @@ layout: default
                   </nav>
                 <img src='{{site.url}}/img/title.svg' class='mt-5' style='width:100%' >
                 <h3 class='mt-5'>блог дизайнера о дизайне и не только</h3>
-                <img src='{{site.url}}/img/logo.svg' class='d-none d-sm-none d-md-inline' style="position: absolute; bottom: 55px; height: 4vh;">
+                <img src='logo.svg' class='d-none d-sm-none d-md-inline' style="position: absolute; bottom: 80px; height: 4vh;">
+                <div style='position: absolute; bottom: 55px; ' class='d-none d-sm-none d-md-inline'>
+                    <a style="color: #fff; text-decoration: none;" href="http://blog.ikovylyaev.com/terms">terms of use</a> | <a style="color: #fff; text-decoration: none;" href="http://blog.ikovylyaev.com/policy">privacy policy</a>
+                </div>
             </div>
             <div class='col-12 col-sm-12 col-md-4 offset-md-2 col-lg-4 offset-lg-2 col-xl-4 offset-xl-2' style="padding-top: 0.5rem;">
                 {% for post in site.posts limit: 4 %}
@@ -52,36 +55,8 @@ layout: default
             </div>
 	{% endfor %}
         </div>
+	<img src='logo.svg' class='d-inline d-sm-inline d-md-none' style="margin-top: 50px; height: 4vh;">
+        <div class='d-block d-sm-block d-md-none'>
+            <a style="color: #fff; text-decoration: none;" href="http://blog.ikovylyaev.com/terms">terms of use</a> | <a style="color: #fff; text-decoration: none;" href="http://blog.ikovylyaev.com/policy">privacy policy</a>
+        </div>
     </div>
-
-<footer class="row" style="margin-top: 200px;">
-	<div class="col-6 m-0">
-		&copyikovylyaev.com 2021<br>
-		<a href='{{site.url}}/terms'>terms of use</a> | <a href='{{site.url}}/policy'>privacy policy</a>
-	</div>
-	<div class="col-6 m-0" style='text-align: right'>
-		<ul class="nav social-links">
-		  <li class="nav-item">
-		    <a class="nav-link" href="http://vk.com/ikovylyaev"><i class="fab fa-vk"></i></a>
-		   </li>
-		   <li class="nav-item">
-		    <a class="nav-link" href="http://instagram.com/ikovylyaev"><i class="fab fa-instagram"></i></a>
-		   </li>
-		   <li class="nav-item">
-	            <a class="nav-link" style="color: #fff;" href="https://www.youtube.com/channel/UCf9GOVc0qKKPB-Ee3LfH_uw"><i class="fab fa-youtube"></i></a>
-	           </li>
-		   <li class="nav-item">
-		    <a class="nav-link" href="http://500px.com/azimytfoto"><i class="fab fa-500px"></i></a>
-		   </li>
-		   <li class="nav-item">
-		    <a class="nav-link" href="https://www.behance.net/ikovylyaev"><i class="fab fa-behance"></i></a>
-		   </li>
-		   <li class="nav-item">
-		    <a class="nav-link" href="http://github.com/ikovylyaev"><i class="fab fa-github"></i></a>
-		   </li>
-		</ul>
-	</div>
-
-</footer>
-
-</main>
