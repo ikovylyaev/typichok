@@ -26,6 +26,7 @@ layout: default
 	  </div>
 	</nav>
 	<section>
+		<h1> {{page.title}}</h1>
 	  {{ content }}
     </section>
 <footer class="row" style="margin-top: 200px;">
