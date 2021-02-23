@@ -5,7 +5,9 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;400;700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,400;0,700;1,400;1,700&display=swap');font-family: 'IBM Plex Mono', monospace;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;400;700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,400;0,700;1,400;1,700&display=swap');
+/* 
+font-family: 'IBM Plex Mono', monospace;
 font-family: 'IBM Plex Sans', sans-serif;
 */
 
