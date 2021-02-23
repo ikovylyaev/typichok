@@ -37,7 +37,7 @@ layout: default
                         <p style="margin-bottom: 0px;">{{ post.date | date_to_long_string }}</p>
                     </a>
                 </div>
-		<% endfor %}
+		{% endfor %}
             </div>
         </div>
         <div class="row">
