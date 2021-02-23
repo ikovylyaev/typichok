@@ -27,7 +27,7 @@ layout: default
 	</nav>
 	<img src='{{site.url}}/img/title.svg' style='width: 100%; margin: 25px 0;'>
 	<section class='row'>
-	  {% for post in site.categories.video %}
+	  {% for post in site.posts %}
 		<a href='{{site.url}}{{ post.permalink }}' class='col-12 mb-4'>
 			<div style="text-transform: lowercase;">
 				<h4>{{ post.title }}</h4>
