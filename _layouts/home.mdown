@@ -5,11 +5,7 @@ layout: default
         <div class='row' style='position: relative; height: calc(100vh - 100px);'>
             <div class='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6'>
                 <nav class="navbar navbar-expand-lg navbar-dark col-12" style='padding-bottom: 40px; padding-top: 0px;'>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                      <div class="collapse navbar-expand navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto navBox">
+                      <ul class="navbar-nav navBox">
                           <li class="nav-item mr-4">
                               <a href="http://ikovylyaev.com" class="nav-link" style='padding-left: 0px!important;'>дизайн</a>
                           </li>
@@ -23,7 +19,6 @@ layout: default
                               <a href="http://blog.ikovylyaev.com" class="active nav-link">блог</a>
                           </li>
                       </ul>
-                    </div>
                   </nav>
                 <img src='{{site.url}}/img/title.svg' class='mt-5' style='width:100%' >
                 <h3 class='mt-5 mb-5'>блог недодизайнера о дизайне и не только</h3>
