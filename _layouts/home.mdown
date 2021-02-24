@@ -5,7 +5,7 @@ layout: default
         <div class='row' style='position: relative; height: calc(100vh - 100px);'>
             <div class='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6'>
                 <nav class="navbar navbar-dark col-12" style='padding-bottom: 40px; padding-top: 0px;'>
-                      <ul class="navbar-nav navBox">
+                      <ul class="nav navBox">
                           <li class="nav-item mr-4">
                               <a href="http://ikovylyaev.com" class="nav-link" style='padding-left: 0px!important;'>дизайн</a>
                           </li>
@@ -15,7 +15,7 @@ layout: default
                           <li class="nav-item mr-4">
                               <a href="http://nature.ikovylyaev.com" class="nav-link">урал</a>
                           </li>
-                             <li class="nav-item">
+                          <li class="nav-item">
                               <a href="http://blog.ikovylyaev.com" class="active nav-link">блог</a>
                           </li>
                       </ul>
