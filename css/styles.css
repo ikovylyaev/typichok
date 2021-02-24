@@ -67,17 +67,24 @@ p{font-size: 0.6em!important;}
 .post .is-col{
     margin-left: 0px!important;
 }
+.post h3{
+    margin-top: 1.5em;
+}
 .post p{
     padding: 0px;
     margin: 0px;
 }
 .post a{
-    color: #fff;
+    color: rgba(255,255,255,0.7);
     text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    transtition: 0.3s;
 }
 .post a:hover{
-    color: #fff;
+    color: rgba(255,255,255,1);
     text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,1);
+    transtition: 0.3s;
 }
 .bg-post{
     z-index: -2;
