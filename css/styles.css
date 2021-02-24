@@ -18,7 +18,19 @@
         color: #fff;
     }
 }
-
+.navBox .nav-item .nav-link{
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.navBox .nav-item .nav-link:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+.navBox .nav-item .nav-link.active{
+    opacity: 1;
+}
 @media (max-width: 767px){
     .post-cont{
         margin-left: 0px; 
